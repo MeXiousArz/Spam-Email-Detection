@@ -7,44 +7,49 @@
     <style>
         body {
             font-family: Arial, Helvetica, sans-serif;
-            background-color: #f5f5f5;
+            background-color: #f3f4f6;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background-color: #1f2937;
+            background-color: #111827;
             color: white;
-            padding: 20px;
+            padding: 25px;
             text-align: center;
         }
 
         section {
             padding: 30px;
-            margin: 20px auto;
-            width: 80%;
+            margin: 25px auto;
+            width: 85%;
             background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
         }
 
         h2 {
-            color: #111827;
+            color: #1f2937;
             border-bottom: 2px solid #e5e7eb;
-            padding-bottom: 5px;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            color: #374151;
+            margin-top: 20px;
         }
 
         img {
             width: 500px;
             display: block;
-            margin: 15px auto;
+            margin: 15px auto 30px auto;
         }
 
         footer {
+            background-color: #111827;
+            color: white;
             text-align: center;
             padding: 15px;
-            background-color: #1f2937;
-            color: white;
         }
 
         a {
@@ -65,22 +70,15 @@
 <section>
     <h2>Project Overview</h2>
     <p>
-        Spam emails are a major issue in digital communication.  
-        This project uses <b>Naive Bayes classifiers</b> to automatically
-        classify emails as <b>Spam</b> or <b>Not Spam</b> based on their content.
+        This project focuses on detecting spam emails using
+        <b>Naive Bayes classification techniques</b>.
+        Different text vectorization approaches such as
+        <b>Bag of Words (BoW)</b> and <b>TF-IDF</b> are evaluated.
     </p>
 </section>
 
 <section>
-    <h2>Dataset</h2>
-    <p>
-        The dataset contains labeled email messages and is preprocessed
-        using text cleaning, tokenization, and vectorization techniques.
-    </p>
-</section>
-
-<section>
-    <h2>Models Used</h2>
+    <h2>Models & Techniques</h2>
     <ul>
         <li>Gaussian Naive Bayes</li>
         <li>Multinomial Naive Bayes</li>
@@ -90,9 +88,34 @@
 </section>
 
 <section>
-    <h2>Results</h2>
+    <h2>Results – Bag of Words (BoW)</h2>
 
-    <h3>TF-IDF + Multinomial Naive Bayes</h3>
+    <h3>Gaussian Naive Bayes</h3>
+    <p><b>Confusion Matrix</b></p>
+    <img src="Spam-Email-Detection-Project/outputs/BoW_GaussianNB_CM.png">
+
+    <p><b>ROC Curve</b></p>
+    <img src="Spam-Email-Detection-Project/outputs/BoW_GaussianNB_ROC.png">
+
+    <h3>Multinomial Naive Bayes</h3>
+    <p><b>Confusion Matrix</b></p>
+    <img src="Spam-Email-Detection-Project/outputs/BoW_MultinomialNB_CM.png">
+
+    <p><b>ROC Curve</b></p>
+    <img src="Spam-Email-Detection-Project/outputs/BoW_MultinomialNB_ROC.png">
+</section>
+
+<section>
+    <h2>Results – TF-IDF</h2>
+
+    <h3>Gaussian Naive Bayes</h3>
+    <p><b>Confusion Matrix</b></p>
+    <img src="Spam-Email-Detection-Project/outputs/TFIDF_GaussianNB_CM.png">
+
+    <p><b>ROC Curve</b></p>
+    <img src="Spam-Email-Detection-Project/outputs/TFIDF_GaussianNB_ROC.png">
+
+    <h3>Multinomial Naive Bayes</h3>
     <p><b>Confusion Matrix</b></p>
     <img src="Spam-Email-Detection-Project/outputs/TFIDF_MultinomialNB_CM.png">
 
@@ -103,17 +126,17 @@
 <section>
     <h2>Source Code</h2>
     <p>
-        Full source code and implementation details are available on GitHub:
+        Complete implementation and datasets are available on GitHub:
     </p>
     <p>
-        👉 <a href="https://github.com/MexiousArz/Spam-Email-Detection" target="_blank">
-        View GitHub Repository
+        🔗 <a href="https://github.com/MexiousArz/Spam-Email-Detection" target="_blank">
+        Spam Email Detection GitHub Repository
         </a>
     </p>
 </section>
 
 <footer>
-    <p>Spam Email Detection Project | Machine Learning</p>
+    <p>Spam Email Detection | Machine Learning Project</p>
 </footer>
 
 </body>
