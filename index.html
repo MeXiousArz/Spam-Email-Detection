@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spam Email Detection using Naive Bayes</title>
+
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #1f2937;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        section {
+            padding: 30px;
+            margin: 20px auto;
+            width: 80%;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            color: #111827;
+            border-bottom: 2px solid #e5e7eb;
+            padding-bottom: 5px;
+        }
+
+        img {
+            width: 500px;
+            display: block;
+            margin: 15px auto;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #1f2937;
+            color: white;
+        }
+
+        a {
+            color: #2563eb;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Spam Email Detection</h1>
+    <p>Machine Learning Project using Naive Bayes</p>
+</header>
+
+<section>
+    <h2>Project Overview</h2>
+    <p>
+        Spam emails are a major issue in digital communication.  
+        This project uses <b>Naive Bayes classifiers</b> to automatically
+        classify emails as <b>Spam</b> or <b>Not Spam</b> based on their content.
+    </p>
+</section>
+
+<section>
+    <h2>Dataset</h2>
+    <p>
+        The dataset contains labeled email messages and is preprocessed
+        using text cleaning, tokenization, and vectorization techniques.
+    </p>
+</section>
+
+<section>
+    <h2>Models Used</h2>
+    <ul>
+        <li>Gaussian Naive Bayes</li>
+        <li>Multinomial Naive Bayes</li>
+        <li>Bag of Words (BoW)</li>
+        <li>TF-IDF Vectorization</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Results</h2>
+
+    <h3>TF-IDF + Multinomial Naive Bayes</h3>
+    <p><b>Confusion Matrix</b></p>
+    <img src="Spam-Email-Detection-Project/outputs/TFIDF_MultinomialNB_CM.png">
+
+    <p><b>ROC Curve</b></p>
+    <img src="Spam-Email-Detection-Project/outputs/TFIDF_MultinomialNB_ROC.png">
+</section>
+
+<section>
+    <h2>Source Code</h2>
+    <p>
+        Full source code and implementation details are available on GitHub:
+    </p>
+    <p>
+        👉 <a href="https://github.com/MexiousArz/Spam-Email-Detection" target="_blank">
+        View GitHub Repository
+        </a>
+    </p>
+</section>
+
+<footer>
+    <p>Spam Email Detection Project | Machine Learning</p>
+</footer>
+
+</body>
+</html>
